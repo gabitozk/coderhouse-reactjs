@@ -5,10 +5,10 @@ export default function Navbar () {
         <header className='header'>
             <h3>LOGO</h3>
             <ul className='header__nav'>
-                <li>shop</li>
-                <li>contact</li>
-                <li>about</li>
-                <li>log in</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>Log in</li>
             </ul>
         </header>
     )
