@@ -1,4 +1,5 @@
-import './css/Navbar.css';
+import '../Navbar/style.css';
+import CartWidget from '../CartWidget/index.jsx';
 
 export default function Navbar () {
     return (
@@ -9,6 +10,9 @@ export default function Navbar () {
                 <li>Contact</li>
                 <li>About</li>
                 <li>Log in</li>
+                <li>
+                    <CartWidget />
+                </li>
             </ul>
         </header>
     )
