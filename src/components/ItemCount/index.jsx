@@ -11,7 +11,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     const resCant = () => {
             setCant(cant - 1);
-            setStockk(stockk + 1)
+            setStockk(stockk + 1);
     }
 
     return (
