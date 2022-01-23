@@ -1,25 +1,22 @@
 import { useState } from "react";
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial, productName}) => {
     const [cant, setCant] = useState(initial);
-    const [stockk, setStockk] = useState(stock);
-      
-    const sumCant = () => {
-            setCant(cant + 1);
-            setStockk(stockk - 1);
-    }
+    const [stk, setStk] = useState(stock - cant);
 
-    const resCant = () => {
-            setCant(cant - 1);
-            setStockk(stockk + 1);
+    const onAdd = () => {
+        if(stk) {
+            setCant(cant + 1);
+            setStk(stk - 1);
+        }
     }
 
     return (
         <div>
-            <p>Item detail</p>
-            <button onClick={resCant}>-</button>
+            <p>{productName}</p>
+            <button>-</button>
             <p>{cant}</p>
-            <button onClick={sumCant}>+</button>
+            <button onClick={onAdd}>+</button>
             <button>Agregar a carrito</button>
         </div>
     );
