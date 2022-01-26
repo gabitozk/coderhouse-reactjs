@@ -1,12 +1,17 @@
+import './style.css';
 import ItemCount from "../ItemCount";
 import ItemList from "../ItemList";
 
 const ItemListContainer = () => {
+    const onAdd = (cant) => {
+        if(cant) {
+            console.log(`Agregaste ${cant} productos`);
+        }
+    }
 
     return (
-            <div>
-                <h1>PRODUCTOS</h1>
-                <ItemCount initial={1} stock={3} productName={"T-shirt"}/>
+            <div className="container">
+                <ItemCount initial={1} stock={3} onAdd={onAdd}/>
                 <ItemList />
             </div>
         );

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './style.css';
 import Item from "../Item";
 import productos from "../../data";
 
@@ -18,8 +19,7 @@ const ItemList = () => {
     }, [])
 
     return(
-        <div>
-            <h3>Mis productos</h3>
+        <div className="container-item-list">
             {products.map((producto) => (
                 <Item key={producto.id}
                       title={producto.title}
