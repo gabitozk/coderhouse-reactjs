@@ -19,3 +19,8 @@ Después de instalar las dependencias se va a simular un server en el puerto 300
 Corre el comando para poder iniciar el proyecto y levantar un server de prueba:
 [http://localhost:3000]
 
+### Navegabilidad
+
+![navegabilidad-1](./navegabilidad-1.gif)
+
+![navegabilidad-2](./navegabilidad-2.gif)
