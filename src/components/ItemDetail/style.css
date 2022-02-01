@@ -1,6 +1,11 @@
 .item-detail-container {
-    width: 70%;
+    width: 100%;
     height: auto;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
 
 .item-detail-container img {
@@ -16,4 +21,12 @@
 .item-detail-container ul li {
     display: inline-block;
     margin-left: 15px;
+}
+
+.item-detail-price {
+    font-size: 1.5rem;
+}
+
+.item-detail-title {
+    font-size: 2rem;
 }

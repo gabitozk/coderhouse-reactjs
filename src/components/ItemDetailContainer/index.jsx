@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
-const ItemDetailContainer = () => {
-    const [item, setItem] = useState([]);
-    const [load, setLoad] = useState(true);
+const ItemDetailContainer = ({item}) => {
+    /* const [item, setItem] = useState([]);
+    const [load, setLoad] = useState(true); */
 
-    useEffect(() => {
+    /* useEffect(() => {
         const URL = 'http://localhost:3001/productos';
         
         const getItem = () => {
@@ -19,22 +19,21 @@ const ItemDetailContainer = () => {
 
         getItem();
 
-    }, []);
+    }, []); */
 
-    if (load) {
+    /* if (load) {
         
         return <h3>cargando...</h3>
     
-    } else {
+    } else { */
 
         return (
-            
             <div>
-                <ItemDetail item={item[0]}/>
+                <ItemDetail item={item}/>
             </div>
         )
         
-    }
+    
     
 } 
 

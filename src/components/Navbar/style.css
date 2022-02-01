@@ -12,8 +12,25 @@
     background-color: #fff;
 }
 
-.header__nav {
+.header__nav, .header__filters {
     list-style: none;
+}
+
+.header__filters li {
+    display: inline-block;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-family: 'DM Sans';
+    color: #fff;
+    background-color: #0ACF83;
+    border-radius: 20px;
+}
+
+.header__filters li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .header__nav li {
@@ -23,7 +40,13 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.header__nav--logo {
-    width: 3%;
+.header__nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+a .header__nav--logo {
+    width: 40%;
+    vertical-align: middle;
 }
 

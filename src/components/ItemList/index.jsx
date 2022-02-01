@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import './style.css';
 import Item from "../Item";
-import productos from "../../data";
 
 
 const ItemList = () => {

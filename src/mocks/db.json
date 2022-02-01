@@ -4,37 +4,57 @@
         "price": 29990,
         "img": "https://http2.mlstatic.com/D_NQ_NP_798525-MLA46180356947_052021-O.jpg",
         "id": 1,
-        "description": "Cancelación Activa de Ruido para que disfrutes de un sonido inmersivo. Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno. Ajuste personalizable para que los uses con comodidad todo el día. Y resistencia al agua y al sudor (1). Los AirPods Pro tienen un diseño increíblemente ligero y se configuran fácilmente en todos tus dispositivos Apple (2)." 
+        "description": "Cancelación Activa de Ruido para que disfrutes de un sonido inmersivo. Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno. Ajuste personalizable para que los uses con comodidad todo el día. Y resistencia al agua y al sudor (1). Los AirPods Pro tienen un diseño increíblemente ligero y se configuran fácilmente en todos tus dispositivos Apple (2).",
+        "category": "auriculares"
       },
       { "title": "Auriculares Galaxy Earbuds 2",
         "price": 16222,
         "img": "https://http2.mlstatic.com/D_NQ_NP_765360-MLA47031287232_082021-O.jpg",
         "id": 2,
-        "description": "Samsung, empresa coreana de gran prestigio, se destaca por su presencia mundial en el mercado de electrónica. La compañía tiene como base fundamental ofrecer los mejores productos y servicios. Es por esto que sus gamas de auriculares presentan innovaciones tecnológicas que vas a notar al reproducir tu música preferida." 
+        "description": "Samsung, empresa coreana de gran prestigio, se destaca por su presencia mundial en el mercado de electrónica. La compañía tiene como base fundamental ofrecer los mejores productos y servicios. Es por esto que sus gamas de auriculares presentan innovaciones tecnológicas que vas a notar al reproducir tu música preferida.",
+        "category": "auriculares" 
       },
       { "title": "Auriculares inalámbricos Sony WH-CH510",
         "price": 4999,
         "img": "https://http2.mlstatic.com/D_NQ_NP_933418-MLA40865317836_022020-O.jpg",
         "id": 3,
-        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso." 
+        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso." ,
+        "category": "auriculares"
       },
       { "title": "Auriculares in-ear inalámbricos Sony WI-C200",
         "price": 5320,
         "img": "https://http2.mlstatic.com/D_NQ_NP_715564-MLA40865290210_022020-O.jpg",
         "id": 4,
-        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso." 
+        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso.",
+        "category": "auriculares"
       },
       { "title": "Parlante Marshall Stanmore II Bluetooth",
         "price": 5320,
         "img": "https://http2.mlstatic.com/D_NQ_NP_643979-MLA44437546482_122020-O.jpg",
         "id": 5,
-        "description": "Más de 50 años de experiencia en sonido y diseño dan respaldo a la marca Marshall. Sus productos no solo son un ícono del rock, sino que trascendieron los escenarios para darle música a tu vida a través parlantes de uso doméstico caracterizados por su alta fidelidad y calidad." 
+        "description": "Más de 50 años de experiencia en sonido y diseño dan respaldo a la marca Marshall. Sus productos no solo son un ícono del rock, sino que trascendieron los escenarios para darle música a tu vida a través parlantes de uso doméstico caracterizados por su alta fidelidad y calidad.",
+        "category": "parlantes" 
       },
       { "title": "Parlante Thonet & Vander Frei Bluetooth",
         "price": 12540,
         "img": "https://http2.mlstatic.com/D_NQ_NP_690225-MLA32799598926_112019-O.jpg",
         "id": 6,
-        "description": "Thonet & Vander Frei ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia." 
+        "description": "Thonet & Vander Frei ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
+        "category": "parlantes" 
+      },
+      { "title": "Parlante JBL Go 2 Bluetooth",
+        "price": 5999,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_995194-MLA46445221119_062021-O.jpg",
+        "id": 7,
+        "description": "El parlante portátil JBL Go 2 tiene todas las funciones que necesitás para llevarlo y usarlo en cualquier lugar.Con el bluetooth vas a tener la facilidad de poner música desde tu smartphone, tablet o computadora. Pero además, tiene una función específica para conferencias telefónicas, que cancela el ruido del ambiente y ofrece un sonido claro y nítido de la voz.",
+        "category": "parlantes" 
+      },
+      { "title": "Parlante Thonet & Vander Vertrag Bluetooth",
+        "price": 45093,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_821841-MLA46257376523_062021-O.jpg",
+        "id": 8,
+        "description": "Thonet & Vander Vertrag BT ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
+        "category": "parlantes" 
       }
 
       

@@ -1,0 +1,11 @@
+.category-page-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px 8% 0 8%;
+    background-color: #e5e5e5;
+}
+
