@@ -1,0 +1,21 @@
+.container-shop-header {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 30px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(37, 37, 37);
+}
+
+.container-shop-header h1 {
+    width: 75%;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.container-shop-header h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

@@ -4,12 +4,12 @@
     height: 60px;
     box-sizing: border-box;
     margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(238, 224, 34);
+    background-color: #fff;
 }
 
 .header__nav {
@@ -20,5 +20,10 @@
     display: inline-block;
     margin-right: 10px;
     cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header__nav--logo {
+    width: 3%;
 }
 

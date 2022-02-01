@@ -1,23 +1,25 @@
-//import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/index.jsx';
-import ItemListContainer from './components/ItemListContainer/index.jsx';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import ProductsPage from './pages/ProductsPage/ProductsPage';
+import ProductsDetailPage from './pages/ProductsDetailPage/ProductsDetailPage';
+import CategoryPage from './pages/CategoryPage/CategoryPage';
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <ItemListContainer />
-    </div>  
 
-    /*
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route></Route>
+        <Route path="/">
+          <Route index element={<ProductsPage />} />
+          <Route path=":productId" element={<ProductsDetailPage />} />
+          <Route path="category/:catId" element={<CategoryPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
-    */
+    
   );
 }
 

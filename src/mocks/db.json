@@ -1,23 +1,42 @@
 {
     "productos": [
-      { "title": "Playstation 5 Standard",
-        "price": 3432,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_841787-MLA44484414455_012021-O.jpeg",
+      { "title": "Apple Airpods Pro",
+        "price": 29990,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_798525-MLA46180356947_052021-O.jpg",
         "id": 1,
-        "description": "Con tu consola PlayStation 5 tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos." 
+        "description": "Cancelación Activa de Ruido para que disfrutes de un sonido inmersivo. Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno. Ajuste personalizable para que los uses con comodidad todo el día. Y resistencia al agua y al sudor (1). Los AirPods Pro tienen un diseño increíblemente ligero y se configuran fácilmente en todos tus dispositivos Apple (2)." 
       },
-      { "title": "gameboy",
-        "price": 3432,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_841787-MLA44484414455_012021-O.jpeg",
+      { "title": "Auriculares Galaxy Earbuds 2",
+        "price": 16222,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_765360-MLA47031287232_082021-O.jpg",
         "id": 2,
-        "description": "bla bla bla" 
+        "description": "Samsung, empresa coreana de gran prestigio, se destaca por su presencia mundial en el mercado de electrónica. La compañía tiene como base fundamental ofrecer los mejores productos y servicios. Es por esto que sus gamas de auriculares presentan innovaciones tecnológicas que vas a notar al reproducir tu música preferida." 
       },
-      { "title": "nintendo",
-        "price": 3432,
-        "img": "https://http2.mlstatic.com/D_NQ_NP_841787-MLA44484414455_012021-O.jpeg",
+      { "title": "Auriculares inalámbricos Sony WH-CH510",
+        "price": 4999,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_933418-MLA40865317836_022020-O.jpg",
         "id": 3,
-        "description": "bla bla bla" 
+        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso." 
+      },
+      { "title": "Auriculares in-ear inalámbricos Sony WI-C200",
+        "price": 5320,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_715564-MLA40865290210_022020-O.jpg",
+        "id": 4,
+        "description": "Sony, sin lugar a dudas es una de las marcas más reconocidas en el mundo por la fabricación de dispositivos de audio. Su gama de auriculares se caracteriza por brindar siempre una gran experencia de uso en sus usuarios y ofrecer una alta calidad en todos los componentes de sus reproductores. Esto hace que puedas notar un gran sonido desde su primer uso." 
+      },
+      { "title": "Parlante Marshall Stanmore II Bluetooth",
+        "price": 5320,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_643979-MLA44437546482_122020-O.jpg",
+        "id": 5,
+        "description": "Más de 50 años de experiencia en sonido y diseño dan respaldo a la marca Marshall. Sus productos no solo son un ícono del rock, sino que trascendieron los escenarios para darle música a tu vida a través parlantes de uso doméstico caracterizados por su alta fidelidad y calidad." 
+      },
+      { "title": "Parlante Thonet & Vander Frei Bluetooth",
+        "price": 12540,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_690225-MLA32799598926_112019-O.jpg",
+        "id": 6,
+        "description": "Thonet & Vander Frei ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia." 
       }
+
       
     ]
   }

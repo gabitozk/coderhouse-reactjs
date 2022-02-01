@@ -6,29 +6,36 @@ import productos from "../../data";
 
 const ItemList = () => {
     const [products, setProducts] = useState([]);
+    const [load, setLoad] = useState(true);
     
     useEffect(() => {
-        const getProducts = () => {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => resolve(productos) ,1000);
-            })
-        }
+        const URL = 'http://localhost:3001/productos';
 
-        getProducts()
+        fetch(URL)
+            .then((res) => res.json())
             .then((data) => setProducts(data))
-            .catch((err) => console.error(err));
+            .finally(setLoad(false));
+    
     }, [])
 
-    return(
-        <div className="container-item-list">
-            {products.map((producto) => (
-                <Item key={producto.id}
-                      title={producto.title}
-                      price={producto.price}
-                />
-            ))}
-        </div>
-    );
+    if(load) {
+        return <h3>Cargando...</h3>
+    } else {
+
+        return(
+            <div className="container-item-list">
+                {products.map((producto) => (
+                    <Item key={producto.id}
+                          img={producto.img}
+                          title={producto.title}
+                          price={producto.price}
+                          id={producto.id}
+                    />
+                ))}
+            </div>
+        );
+    }
 }
+
 
 export default ItemList;
