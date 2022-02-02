@@ -1,0 +1,38 @@
+.item-count-container {
+    width: 100%;
+    height: auto;
+}
+
+.item-count-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-count-buttons-container button {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 166, 34);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.item-count-add-cart {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(255, 166, 34);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
