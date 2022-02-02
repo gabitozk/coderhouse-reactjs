@@ -30,3 +30,21 @@
 .item-detail-title {
     font-size: 2rem;
 }
+
+.item-detail-button-buy {
+    width: 200px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(255, 166, 34);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.item-detail-button-buy a {
+    text-decoration: none;
+    color: #fff;
+}
+

@@ -1,32 +1,14 @@
-import { useState } from "react";
 import './style.css';
 
-const ItemCount = ({stock, initial, onAdd}) => {
-    const [cant, setCant] = useState(initial);
-    const [stk, setStk] = useState(stock - cant);
-
-    const sumaCant = () => {
-        if(stk) {
-            setCant(cant + 1);
-            setStk(stk - 1);
-        }
-    }
-
-    const restCant = () => {
-        if(cant) {
-            setCant(cant - 1);
-            setStk(stk + 1);
-        }
-    }
-
+const ItemCount = ({ onAdd, sumaCant, restCant, itemCant }) => {
     return (
         <div className="item-count-container">
             <div className="item-count-buttons-container">
                 <button onClick={restCant}>-</button>
-                <p>{cant}</p>
+                <p>{itemCant}</p>
                 <button onClick={sumaCant}>+</button>
                 </div>
-            <button className="item-count-add-cart" onClick={()=> onAdd(cant)} >Agregar a carrito</button>
+            <button className="item-count-add-cart" onClick={()=> onAdd(itemCant)}>Agregar a carrito</button>
         </div>
     );
 }
