@@ -2,6 +2,8 @@ import './style.css';
 import ItemCount from '../ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ( {item} ) => {
     const [ itemCant, setItemCant ] = useState(1);
@@ -38,9 +40,6 @@ const ItemDetail = ( {item} ) => {
                        restCant={restCant} 
                        itemCant={itemCant}
             />   
-            <button className='item-detail-button-buy'>
-                <Link to="/cart">Terminar compra</Link>
-            </button>
         </div>
     )
 }
