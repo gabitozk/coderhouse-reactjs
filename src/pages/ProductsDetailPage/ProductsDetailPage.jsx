@@ -18,7 +18,7 @@ const ProductsDetailPage = () => {
 
     }, [productId]);
     
-    if(load) {
+    if(load || !producto) {
         return <h2>Cargando...</h2>
     } else {
         return (

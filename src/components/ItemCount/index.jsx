@@ -1,7 +1,22 @@
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const ItemCount = ({ onAdd, sumaCant, restCant, itemCant }) => {
+const ItemCount = ({ stock, setStock, itemCant, setItemCant }) => {
+  
+  const sumaCant = () => {
+    if (stock) {
+      setItemCant((prevState) => prevState + 1);
+      setStock((prevState) => prevState - 1);
+    }
+  };
+
+  const restCant = () => {
+    if (itemCant) {
+      setItemCant((prevState) => prevState - 1);
+      setStock((prevState) => prevState + 1);
+    }
+  };
+  
   return (
     <div className="item-count-container">
       <div className="item-count-buttons-container">
@@ -9,11 +24,6 @@ const ItemCount = ({ onAdd, sumaCant, restCant, itemCant }) => {
         <p>{itemCant}</p>
         <button onClick={sumaCant}>+</button>
       </div>
-      <Link to="/cart">
-        <button className="item-count-add-cart" onClick={() => onAdd(itemCant)}>
-          Agregar al carrito
-        </button>
-      </Link>
     </div>
   );
 };

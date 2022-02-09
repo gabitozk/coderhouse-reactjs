@@ -4,6 +4,7 @@ import logo from './logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar () {
+
     return (
         <header className='header'>
             <Link to="/"><img src={logo} alt='logo' className='header__nav--logo'/></Link>

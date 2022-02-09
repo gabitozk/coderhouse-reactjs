@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { createContext } from "react";
 
 //Creo el Context --> CartContext
@@ -8,17 +8,36 @@ export const CartContext = createContext({});
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
+    const isInCart = (id) => {
+        return cart.some((purchase) => purchase.item.id === Number(id));
+    }
+
     const addItem = (item, quantity) => {
         const newItem = {item, quantity};
-        setCart((prevState) => [...prevState, newItem]);
+
+        if(isInCart(item.id)) {
+            console.log("Ya tenés este producto en el carrito");
+        } else {
+            setCart((prevState) => [...prevState, newItem]);
+            console.log(`Agregaste: ${quantity} ${item.title}`);
+        }
+    }
+
+    const removeItem = (itemId) => {
+        const newArray = cart.filter((purchase) => purchase.item.id !== itemId );
+        setCart([...newArray]);
+    }
+
+    const clear = () => {
+        setCart([]);
     }
 
     return ( 
-        <CartContext.Provider value={addItem}>
+        <CartContext.Provider value={{addItem, cart, setCart, clear, removeItem}}>
             {children}
         </CartContext.Provider>
     );
 }
 
-//HOOK
+//HOOK -- ANOTACION PERSONAL
 //export const useCart = () => useContext(CartContext);
