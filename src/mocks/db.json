@@ -37,7 +37,8 @@
         "img": "https://http2.mlstatic.com/D_NQ_NP_643979-MLA44437546482_122020-O.jpg",
         "id": 5,
         "description": "Más de 50 años de experiencia en sonido y diseño dan respaldo a la marca Marshall. Sus productos no solo son un ícono del rock, sino que trascendieron los escenarios para darle música a tu vida a través parlantes de uso doméstico caracterizados por su alta fidelidad y calidad.",
-        "category": "parlantes" 
+        "category": "parlantes",
+        "stock": 4 
       },
       { "title": "Parlante Thonet & Vander Frei Bluetooth",
         "price": 12540,

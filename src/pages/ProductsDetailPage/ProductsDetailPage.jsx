@@ -1,31 +1,32 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetailContainer from '../../components/ItemDetailContainer';
-
+import ItemDetailContainer from "../../components/ItemDetailContainer";
+import { getFirestore } from "../../firebase";
 
 const ProductsDetailPage = () => {
-    const { productId } = useParams();
-    const [ producto, setProducto ] = useState();
-    const [ load, setLoad ] = useState(true);
+  const { productId } = useParams();
+  const [producto, setProducto] = useState();
+  const [load, setLoad] = useState(true);
 
-    useEffect (() => {
-        const URL = `http://localhost:3001/productos/${productId}`;
+  useEffect(() => {
+    const db = getFirestore();
+    const productsCollection = db.collection("productos");
+    const product = productsCollection.doc(productId);
 
-        fetch(URL)
-            .then((res) => res.json())
-            .then((data) => setProducto(data))
-            .finally(() => setLoad(false));
+    product
+      .get()
+      .then((response) => {
+        if(!response.exists) console.log("No existe este producto");
+        setProducto({ ...response.data(), id: response.id });
+      })
+      .finally(setLoad(false));
+  }, [productId]);
 
-    }, [productId]);
-    
-    if(load || !producto) {
-        return <h2>Cargando...</h2>
-    } else {
-        return (
-            <ItemDetailContainer item={producto} />
-        )
-    }
-
-}
+  if (load || !producto) {
+    return <h2>Cargando...</h2>;
+  } else {
+    return <ItemDetailContainer item={producto} />;
+  }
+};
 
 export default ProductsDetailPage;

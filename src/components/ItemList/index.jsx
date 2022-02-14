@@ -1,19 +1,33 @@
 import { useEffect, useState } from "react";
 import './style.css';
 import Item from "../Item";
+import { getFirestore } from "../../firebase";
 
 
 const ItemList = () => {
     const [products, setProducts] = useState([]);
     const [load, setLoad] = useState(true);
+    const [error, setError] = useState(null);
     
     useEffect(() => {
-        const URL = 'http://localhost:3001/productos';
+        const db = getFirestore();
+        const productsCollection = db.collection("productos");
+        
+        const getDataFromFirestore = async () => {
+            try {
+                const response = await productsCollection.get();
+                if(response.empty) {
+                    console.log("No hay productos");
+                }
+                setProducts(response.docs.map((doc) => ({...doc.data(), id: doc.id})));
+            } catch(err) {
+                setError(err);
+            } finally {
+                setLoad(false);
+            }
+        }
 
-        fetch(URL)
-            .then((res) => res.json())
-            .then((data) => setProducts(data))
-            .finally(setLoad(false));
+        getDataFromFirestore();
     
     }, [])
 
