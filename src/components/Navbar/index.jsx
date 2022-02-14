@@ -22,7 +22,9 @@ export default function Navbar () {
                 </li>
                 <li>Log in</li>
                 <li>
-                    <Link to="cart"><CartWidget /></Link>
+                    <Link to="cart">
+                        <CartWidget />
+                    </Link>
                 </li>
             </ul>
         </header>
