@@ -50,3 +50,10 @@
     font-weight: 500;
     text-align: right;
 }
+
+.cart-total {
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    text-align: right;
+}

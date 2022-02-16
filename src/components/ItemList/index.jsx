@@ -3,7 +3,6 @@ import './style.css';
 import Item from "../Item";
 import { getFirestore } from "../../firebase";
 
-
 const ItemList = () => {
     const [products, setProducts] = useState([]);
     const [load, setLoad] = useState(true);
