@@ -25,7 +25,8 @@ const ProductsDetailPage = () => {
   if (load || !producto) {
     return <h2>Cargando...</h2>;
   } else {
-    return <ItemDetailContainer item={producto} />;
+    return <ItemDetailContainer item={producto} />
+ 
   }
 };
 

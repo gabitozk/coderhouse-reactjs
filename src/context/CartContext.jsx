@@ -8,6 +8,7 @@ export const CartContext = createContext({});
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
+  const [totalItems, setTotalITems] = useState(0);
  
   useEffect(() => {
     const getTotal = () => {
@@ -22,6 +23,17 @@ export const CartProvider = ({ children }) => {
     getTotal();
   }, [cart]);
 
+  useEffect(() => {
+    let total = 0;
+    
+    for (let item of cart) {
+      total += item.quantity;
+    }
+
+    setTotalITems(total);
+
+  }, [cart]);
+
   const isInCart = (id) => {
     return cart.some((purchase) => purchase.item.id === id);
   };
@@ -30,11 +42,19 @@ export const CartProvider = ({ children }) => {
     const newItem = { item, quantity };
 
     if (isInCart(item.id)) {
-      console.log("Ya tenes este producto");
+      let product = cart.find((p) => p.item.id === item.id);
+      product.quantity += quantity;
+
+      let newCart = cart.map( p => {
+        if (product.item.id === p.item.id) return product;
+
+        return p;
+      });
+
+      setCart(newCart);
     } else {
       if (quantity > 0) {
         setCart(prevState => [...prevState, newItem]);
-        console.log(`Agregaste: ${quantity} ${item.title}`);
       } else {
         console.log("Debés agregar al menos 1 item");
       }
@@ -58,7 +78,8 @@ export const CartProvider = ({ children }) => {
         setCart,
         clear,
         removeItem,
-        total
+        total,
+        totalItems
       }}
     >
       {children}

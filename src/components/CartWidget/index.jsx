@@ -4,13 +4,13 @@ import { CartContext } from "../../context/CartContext";
 import './style.css';
 
 const CartWidget = () => {
-    const { cart } = useContext(CartContext);
+    const { totalItems } = useContext(CartContext);
 
     return (
         <div className="cart-widget">
             
             <FaShoppingCart/>
-            <p>({cart.length})</p>
+            <p>({totalItems})</p>
            
 
         </div>

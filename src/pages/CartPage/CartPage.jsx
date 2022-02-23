@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import 'react-toastify/dist/ReactToastify.css';
 import { CartContext } from "../../context/CartContext";
 import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,11 +7,9 @@ import { getFirestore } from "../../firebase";
 
 const CartPage = () => {
   const { cart, clear, removeItem, total } = useContext(CartContext);
-
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [phone, setPhone] = useState("");
-
   const navigate = useNavigate();
 
   const db = getFirestore();
