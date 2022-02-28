@@ -7,7 +7,7 @@ import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import CartPage from "./pages/CartPage/CartPage";
 import { CartProvider } from "./context/CartContext";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Route path="checkout/:orderId" element={<CheckoutPage />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );

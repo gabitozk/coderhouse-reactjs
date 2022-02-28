@@ -20,7 +20,6 @@ export default function Navbar () {
                 <li>
                     <Link to="/">Shop</Link>
                 </li>
-                <li>Log in</li>
                 <li>
                     <Link to="cart">
                         <CartWidget />

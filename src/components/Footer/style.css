@@ -1,0 +1,21 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: rgb(54, 54, 54);
+    
+    
+}
+
+.footer p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}

@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import 'react-toastify/dist/ReactToastify.css';
 import { CartContext } from "../../context/CartContext";
 import "./style.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,6 +9,7 @@ const CartPage = () => {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [phone, setPhone] = useState("");
+  const [creditCard, setCreditCard] = useState("");
   const navigate = useNavigate();
 
   const db = getFirestore();
@@ -19,7 +19,8 @@ const CartPage = () => {
     e.preventDefault();
 
     if (name === ""|| surname === "" || phone === "") {
-      console.log("Debés llenar los campos!");
+      alert("Debés llenar todos los campos");
+      
     } else {
       const newOrder = {
         buyer: { name, surname, phone },
@@ -40,7 +41,7 @@ const CartPage = () => {
     return (
       <div className="cart-container">
         <h2>Este es tu carrito:</h2>
-        <button onClick={clear}>Limpiar carrito</button>
+        <button className="cart--clean-button" onClick={clear}>Limpiar carrito</button>
 
         {cart.map((myCart) => {
           return (
@@ -52,8 +53,8 @@ const CartPage = () => {
                 <div className="cart-item--title">
                   <h4>{myCart.item.title}</h4>
                   <p>Cantidad seleccionada: {myCart.quantity}</p>
-                  <button onClick={() => removeItem(myCart.item.id)}>
-                    eliminar item
+                  <button className="cart-item--button-delete"onClick={() => removeItem(myCart.item.id)}>
+                    Quitar producto
                   </button>
                 </div>
                 <div className="cart-item--price">
@@ -94,7 +95,16 @@ const CartPage = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           ></input>
-          <input type="submit" value="Terminar compra" />
+          <label htmlFor="creditCard">Tarjeta de crédito</label>
+          <input
+            type="number"
+            name="creditCard"
+            id="creditCard"
+            placeholder="Escribí los números de tu tarjeta"
+            value={creditCard}
+            onChange={(e) => setCreditCard(e.target.value)}
+          ></input>
+          <input className="end-purchase"type="submit" value="Terminar compra" />
         </form>
       </div>
     );

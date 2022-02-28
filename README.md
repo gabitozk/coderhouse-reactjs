@@ -1,23 +1,25 @@
 # Ecommerce Shop Audio
 
-Este proyecto es un ecommerce con funcionalidad de catálogo y carrito. El proyecto es para cumplimentar el curso de React JS en Coderhouse.
+Este proyecto es un ecommerce con funcionalidad de catálogo con Firebase y carrito. El proyecto es para cumplimentar el curso de React JS en Coderhouse.
 
-## Dependencias
+## Después de clonar
 
-Se requiere instalar `json-server` para simular una API REST y buscar los productos del catálogo:
+Para poder correr el proyecto correctamente, ejecutar desde consola lo siguiente: 
 
-[https://github.com/typicode/json-server]
+### `npm install`
 
-### `npm run server`
+Debés configurar un archivo '.env' dentro del directorio raíz con las siguientes variables de entorno para Firebase:
 
-Después de instalar las dependencias se va a simular un server en el puerto 3001 para los productos:
-[http://localhost:3001/productos] 
+### `REACT_APP_API_KEY="your firebase data"`
+### `REACT_APP_AUTH_DOMAIN="your firebase data"`
+### `REACT_APP_PROJECT_ID="your firebase data"`
+### `REACT_APP_STORAGE_BUCKET="your firebase data"`
+### `REACT_APP_MESSAGE_SENDER_ID="your firebase data"`
+### `REACT_APP_APP_ID="your firebase data"`
 
+Luego, ya puedes inicializar el proyecto: 
 
 ### `npm start`
-
-Corre el comando para poder iniciar el proyecto y levantar un server de prueba:
-[http://localhost:3000]
 
 ### Navegabilidad
 
